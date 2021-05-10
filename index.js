@@ -5,7 +5,7 @@ const port = 80;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = `App Version ${process.env.AppVersion}`
-  // throw exception('test')
+  throw exception('test')
   res.end(msg);
 });
 
