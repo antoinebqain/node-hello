@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: node-hello
-        image: gcr.io/forbes-sandbox-tony-baqain/node-hello
+        image: tonybaqain/node-hello
         resources:
           requests:
             memory: "32Mi"
