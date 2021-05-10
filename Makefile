@@ -1,7 +1,7 @@
 .PHONY = all
 RELEASE=$(APPVERSION)
 
-all: build tag push commit
+all: build tag push commit sync
 
 build:
 	docker build -t hello .
@@ -17,3 +17,6 @@ commit:
 	git add .
 	git commit -m "adding changes for ${RELEASE}"
 	git push
+
+sync:
+	argo app sync application
