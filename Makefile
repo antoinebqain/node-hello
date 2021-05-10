@@ -19,4 +19,4 @@ commit:
 	git push
 
 sync:
-	argo app sync application
+	argocd app sync application
